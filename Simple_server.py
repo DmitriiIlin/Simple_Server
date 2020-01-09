@@ -19,7 +19,7 @@ def server_active():
 def client():
     #Создание клиента сервера
     s = socket(AF_INET, SOCK_STREAM)
-    s.connect(('localhost', 12344))
+    s.connect(('localhost', 12345))
     s.send(b'Hello')
     print(s.recv(1024).strip())
 
